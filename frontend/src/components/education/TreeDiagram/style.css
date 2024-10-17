@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 2px;
+}
+
+.node text {
+  font: 19px sans-serif;
+  fill: #e7e7e7;
+}
+
+.link {
+  fill: none;
+  stroke: #b1b1b1;
+  stroke-width: 2px;
+}
+
+.node:hover circle {
+  fill: #ffcc00;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  padding: 5px;
+  font: 19px sans-serif;
+  background: #333;
+  color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
